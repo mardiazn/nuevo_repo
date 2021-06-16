@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'KoHo', sans-serif;
+
+}
+main{
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 25px;
+    padding-bottom: 70px;
+    color: rgb(35,35,78);
+}
+
+
+
+
+
+header{
+    background-color: rgb(44, 44, 105);
+    padding-bottom: 20px;
+}
+
+.header__titulo{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: floralwhite;
+}
+
+.header__subtitulo{
+    text-align: center;
+    font-size: 30px;
+    color: floralwhite;
+
+}
+
+
+
+
+
+nav{
+    background-color:rgb(44, 44, 105);
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#nav__logo{
+    height: 75px;
+    margin-top: 15px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+
+
+.introduccion{
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+.tituloSeccion{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+
+
+
+
+
+.camposAccion__subtitulos{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.camposAccion__descripcion{
+    font-size: 25px;
+    text-align: justify;
+}
+
+#camposAccion__grid{
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    grid-template-rows: 180px 350px 165px 300px;
+    grid-template-areas: 
+    "imgCivil       imgSociedades"
+    "civil          sociedades"
+    "imgEmpresario  imgComercial"
+    "empresario     comercial";
+    align-items: start;
+    justify-items:center;
+    justify-content: center;
+    grid-column-gap: 25px;
+    
+}
+
+#imgCivil{
+    grid-area: imgCivil;
+}
+
+#civil{
+    grid-area: civil;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgComercial{
+    grid-area: imgComercial;
+}
+
+#comercial{
+    grid-area: comercial;
+    align-self:initial;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgEmpresario{
+    grid-area: imgEmpresario;
+}
+
+#empresario{
+    grid-area: empresario;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgSociedades{
+    grid-area: imgSociedades;
+}
+
+#sociedades{
+    grid-area: sociedades;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+.servicios__subtitulos{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.servicios__descripcion{
+    font-size: 22px;
+    text-align: justify;
+}
+
+#servicios__grid{
+    display: grid;
+    grid-auto-columns: 30% 30% 30%;
+    grid-template-rows: 170px 480px 170px 350px 170px 400px;
+    grid-template-areas: 
+    "imgCivil       imgSociedades imgEmpresario"
+    "civil          sociedades    empresario"
+    "imgCompliance  imgComercial  imgTributario"
+    "compliance     comercial     tributario"
+    "imgConsumidor  imgEconomico  imgRealEstate"
+    "consumidor     economico     realEstate";
+    align-items: start;
+    justify-items:center;
+    justify-content: center;
+    grid-column-gap: 25px;
+    
+}
+
+#imgCivil2{
+    grid-area: imgCivil;
+}
+
+#civil2{
+    grid-area: civil;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgComercial2{
+    grid-area: imgComercial;
+}
+
+#comercial2{
+    grid-area: comercial;
+    align-self:initial;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgEmpresario2{
+    grid-area: imgEmpresario;
+}
+
+#empresario2{
+    grid-area: empresario;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgSociedades2{
+    grid-area: imgSociedades;
+}
+
+#sociedades2{
+    grid-area: sociedades;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgRealEstate{
+    grid-area: imgRealEstate;
+}
+
+#realEstate{
+    grid-area: realEstate;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgEconomico{
+    grid-area: imgEconomico;
+}
+
+#economico{
+    grid-area: economico;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgTributario{
+    grid-area: imgTributario;
+}
+
+#tributario{
+    grid-area: tributario;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgCompliance{
+    grid-area: imgCompliance;
+}
+
+#compliance{
+    grid-area: compliance;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#imgConsumidor{
+    grid-area: imgConsumidor;
+}
+
+#consumidor{
+    grid-area: consumidor;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+#nuestroEquipo__grid{
+    display: grid;
+    grid-auto-columns: 30% 30% 30%;
+    grid-template-rows: 350px 350px 350px 350px;
+    grid-template-areas: 
+    "d1 d1 f1"
+    "f2 d2 d2"
+    "d3 d3 f3"
+    "f4 d4 d4";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+} 
+
+#d1{
+    grid-area: d1;
+}
+
+#d2{
+    grid-area: d2;
+}
+
+#d3{
+    grid-area: d3;
+}
+
+#d4{
+    grid-area: d4;
+}
+
+#f1{
+    grid-area: f1;
+}
+
+#f2{
+    grid-area: f2;
+}
+
+#f3{
+    grid-area: f3;
+}
+#f4{
+    grid-area: f4;
+}
+
+.nuestroEquipo__nombres{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.nuestroEquipo__descripcion{
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nuestroEquipo__foto{
+    height: 350px;
+   
+}
+
+
+
+
+footer{
+    background-color: rgb(195, 195, 224);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__parrafos{
+    text-align: center;
+    font-size: 20px;
+}
+
+.formulario{
+    font-size: 30px;
+}
+
+.formulario__boton{
+    font-size: 20px;
+}
